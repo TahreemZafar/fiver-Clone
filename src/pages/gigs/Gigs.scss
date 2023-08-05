@@ -1,0 +1,114 @@
+.gigs {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1400px;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .breadcrumbs {
+            font-weight: 400;
+            font-size: 14px;
+            color: #555;
+        }
+
+        p { 
+            color: #777;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #555;
+                font-weight: 300;
+
+                input {
+                    padding: 8px;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    font-size: 18px;
+
+                    &::placeholder {
+                        color: gray;
+                        font-size: 16px;
+                    }
+                }
+
+                button{
+                    background-color: #1dbf73;
+                    color: white;
+                    font-weight: 500;
+                    border: none;
+                    cursor: pointer;
+                    padding: 11px 20px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                }
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+
+                .sortBy {
+                    color: #555;
+                    font-weight: 400;
+                    font-size: 17px;
+                }
+
+                .sortType {
+                    font-weight: 500;
+                    font-size: 19px;
+                }
+
+                img { 
+                  width: 20px;
+                  cursor: pointer;
+                }
+
+                .rightMenu {
+                    padding: 20px;
+                    width: 150px;
+                    height: 70px;
+                    z-index: 999;
+                    color: black;
+                    font-size: 18px;
+                    background-color: white;
+                    border-radius: 5px;
+                    border: 2px solid lightgray;
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    color: #555;
+
+                    span {
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

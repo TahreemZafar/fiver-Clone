@@ -1,0 +1,64 @@
+.orders {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1400px;
+        padding: 50px 0;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 33px;
+            }
+
+            button {
+                background-color: #1dbf73;
+                color: white;
+                font-weight: 500;
+                border: none;
+                padding: 15px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        table {
+            margin-top: 30px;
+            width: 100%;
+
+            tr {
+                height: 50px;
+
+                th {
+                    text-align: left;
+                    font-size: 20px;
+                }
+
+                td {
+
+                    .image {
+                        width: 50px;
+                        height: 28px;
+                        object-fit: cover;
+                    }
+
+                    .delete {
+                        width: 25px;
+                        cursor: pointer;
+                        margin-left: 20px;
+                    }
+                }
+
+              &:nth-child(even) {
+                  background-color: #1dbf730f;
+              }
+
+            }
+        }
+
+    }
+}

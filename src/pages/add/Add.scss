@@ -1,0 +1,90 @@
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 50px;
+      color: gray;
+      font-weight: 300;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: gray;
+        font-size: 20px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+          margin-bottom: 20px;
+          font-size: 19px;
+
+          &::placeholder {
+            font-size: 16px;
+          }
+        }
+
+        textarea {
+          font-size: 21px;
+
+          &::placeholder {
+            font-size: 19px;
+          }
+        }
+
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #1dbf73;
+          cursor: pointer;
+          margin-top: -90px;
+        }
+
+        .file {
+          margin-top: -90px;
+          margin-bottom: -70px;
+        }
+
+        .cover {
+          margin-top: -80px;
+        }
+
+        .lab {
+          margin-bottom: -80px;
+        }
+
+        .cat {
+          margin-bottom: -80px;
+          margin-top: -80px;
+        }
+
+        .desc {
+          margin-bottom: -80px;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}
